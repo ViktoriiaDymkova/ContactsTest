@@ -1,4 +1,4 @@
-package com.byndyusoft;
+package com.byndyusoft.tests;
 
 import com.byndyusoft.config.CredentialsConfig;
 import com.byndyusoft.helpers.Attach;
