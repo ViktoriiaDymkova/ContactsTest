@@ -14,18 +14,9 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class ContatsTest {
+public class ContatsTest extends TestBase {
 
     @Tag("smokeTest")
-
-    @BeforeEach
-    public void beforeAll() {
-        Configuration.baseUrl = "https://www.google.ru/";
-        Configuration.browserSize = "1920x1080";
-    }
-
-    LocatorsPage locatorsPage = new LocatorsPage();
-
     @Test
     @DisplayName("Автоматизация скрипта проверки контактной информации на сайте компании Byndyusoft")
     void byndyusoftContactsTest() {
