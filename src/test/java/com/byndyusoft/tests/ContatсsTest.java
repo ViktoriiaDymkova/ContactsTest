@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class ContatsTest extends TestBase {
+public class ContatсsTest extends TestBase {
 
     @Tag("smokeTest")
     @Test
