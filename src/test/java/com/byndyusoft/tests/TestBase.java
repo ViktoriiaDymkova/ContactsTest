@@ -13,10 +13,7 @@ public class TestBase {
 
     @BeforeEach
     public void beforeAll() {
-
-
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-
 
         String browser = System.getProperty("browser", "chrome");
         Configuration.baseUrl = "https://www.google.ru/";
