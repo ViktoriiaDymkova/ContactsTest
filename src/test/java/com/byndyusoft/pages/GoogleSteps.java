@@ -22,14 +22,12 @@ public class GoogleSteps {
             collection = $$(".g .LC20lb");
 
     //actions
-    @Step("В поисковой строке введите Byndyusoft")
     public GoogleSteps clickToSearch() {
         search.click();
         searchInput.setValue("Byndyusoft").pressEnter();
         return this;
     }
 
-    @Step("Перейдите по первой ссылке")
     public GoogleSteps finfirst() {
         collection.first().click();
         return this;

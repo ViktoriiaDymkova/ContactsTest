@@ -22,14 +22,12 @@ public class MainPageSteps {
 
     //actions
 
-    @Step("Нажмите на желтую кнопку 'Заказать презентацию' в разделе 'Узнайте больше о наших продуктах'")
     public MainPageSteps findButton() {
         Selenide.switchTo().window(1);
         aboutProducts.scrollIntoView(true).click();
         return this;
     }
 
-    @Step("Проверьте корректность номера телефона и почтового ящика")
     public MainPageSteps checkInfo() {
         tel.shouldHave(text("8 800 775-15-21"));
         email.shouldBe(visible);
